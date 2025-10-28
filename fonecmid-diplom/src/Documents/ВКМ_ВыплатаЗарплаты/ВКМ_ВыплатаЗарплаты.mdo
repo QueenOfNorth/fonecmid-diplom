@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="680f78f4-0797-42eb-a696-ef75b5c0c146">
+  <producedTypes>
+    <objectType typeId="555e8bb8-03a9-46b7-8e4a-7e794e822c7f" valueTypeId="7e6b92d9-07df-4e74-b4ca-74b49f9283fe"/>
+    <refType typeId="0ca3b4b1-b6d9-4231-bd2f-4c9983076ca5" valueTypeId="66d0e8a1-a96d-4940-b6fd-1c0264296f46"/>
+    <selectionType typeId="cfb9f92a-82c3-411a-a8bb-e04def1fa3f0" valueTypeId="0a0d7b88-cdc3-4a28-b19a-eb840b64e4cf"/>
+    <listType typeId="b9506507-35f2-4679-b5eb-d7c9f3ba26fa" valueTypeId="e1cee906-1173-4ee4-bf96-d36f832f1067"/>
+    <managerType typeId="2e91f439-ca18-4ccd-8035-cae0b3fed295" valueTypeId="ddd008b1-ee36-489b-adf6-50b741206b46"/>
+  </producedTypes>
+  <name>ВКМ_ВыплатаЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплата зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ВыплатаЗарплаты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_ВыплатаЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="eb05b91c-cc2a-4af5-b57d-6b4c3896a4d9">
+    <name>ВКМ_Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="8f5faf8f-1100-426f-8469-7215a38a3697">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="cf09aa1f-8b05-4ea2-ad0e-6b954e59a99a">
+    <producedTypes>
+      <objectType typeId="d3704aba-837a-42bf-adf8-860e1c9e845b" valueTypeId="f8c9e5f7-0666-4d5c-9ab2-668c4c093a42"/>
+      <rowType typeId="38ece533-dc7f-4eab-811e-3b71b672b0e7" valueTypeId="a32ba394-14fc-4e9d-a66d-aea49bc71609"/>
+    </producedTypes>
+    <name>ВКМ_Выплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выплаты</value>
+    </synonym>
+    <attributes uuid="d27cd78e-4548-43e8-849c-2567953e5bef">
+      <name>ВКМ_Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d006595c-0dac-42c1-b344-2bde824f4c4c">
+      <name>ВКМ_Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

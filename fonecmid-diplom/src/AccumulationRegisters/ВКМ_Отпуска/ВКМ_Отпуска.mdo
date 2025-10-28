@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="adca6a32-d103-442c-944c-37f78c1d8728">
+  <producedTypes>
+    <selectionType typeId="49367592-3efa-4c3c-b234-72fd24a65fba" valueTypeId="d1b25fd1-22f4-4c58-a9fa-053917bc0aa9"/>
+    <listType typeId="7074b066-b22f-40a2-9a1c-86551814ea3a" valueTypeId="c963d36e-3889-4f0b-9ff4-c9a58efaa0da"/>
+    <managerType typeId="72e0954a-64f3-4e84-81cb-b486a3292305" valueTypeId="81d8a9e8-a60e-415d-9c8a-d82ead95cf5f"/>
+    <recordSetType typeId="e50f3cd6-571f-4d7d-b857-3ff4d9334317" valueTypeId="7be153a4-3a02-4222-a843-29cad9122bb2"/>
+    <recordKeyType typeId="c7e68493-a224-4c89-9c21-53411f882e7b" valueTypeId="0a03e4e8-cbb6-4dd8-8f9f-a3c0dcfd4bc8"/>
+    <recordType typeId="230336f6-7964-4931-b722-3f3c8d48e806" valueTypeId="b788bab7-9ea4-46b8-8127-7eff4d2dd38e"/>
+  </producedTypes>
+  <name>ВКМ_Отпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отпуска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="7ed480e3-06fc-44f5-8823-0ce5e0066940">
+    <name>ВКМ_ДниФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дни факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="df0ea055-bcc7-4ad2-ae0c-6385ae7f0b32">
+    <name>ВКМ_ДниПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дни план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="093ba726-fb69-4241-bf9d-c5303f369eba">
+    <name>ВКМ_Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

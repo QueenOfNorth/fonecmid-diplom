@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d1f3a5d-ee93-4be9-8c5f-a1353922cda1">
+  <producedTypes>
+    <objectType typeId="a246d7d5-0278-4175-87a5-93443a8fc7a5" valueTypeId="ab4f2470-3e4d-46a8-8f8e-6612c41a251c"/>
+    <refType typeId="f7caa7b7-c75c-46f6-b025-c0f42eccf397" valueTypeId="5295c81c-6f88-43b0-b633-d5fa68e4bb8c"/>
+    <selectionType typeId="391e417d-9e57-494a-8400-690df94bfce3" valueTypeId="1dbef4ea-0894-4199-9d9a-680d10c4bcc9"/>
+    <listType typeId="c550245f-9a1d-46cd-adc9-696d361522bc" valueTypeId="f2d4e6fa-f12c-41f6-8e8a-826c46f7c980"/>
+    <managerType typeId="3ffabb68-98bb-43a2-88b4-c886319f66ce" valueTypeId="96ef8e83-ffb9-4b68-bb78-3d0c926eecbc"/>
+    <displacingCalculationTypesType typeId="2fe08b9d-0cfd-470b-9701-fdda5ec2da72" valueTypeId="210c4338-0d5a-4e6b-96d6-2c3b8a5835be"/>
+    <displacingCalculationTypesRowType typeId="8f1cde99-5d28-431d-987b-a4e34038fe95" valueTypeId="86a7770b-883c-45bd-879e-3eaeec322c88"/>
+    <baseCalculationTypesType typeId="b54318e1-3e26-4271-8c18-e168c1fd0a9f" valueTypeId="9e729a2e-1eff-4a05-9e61-3c96b8ccc24e"/>
+    <baseCalculationTypesRowType typeId="09214406-2836-45e7-8c2a-33e18e6190e1" valueTypeId="f9e324aa-c101-449c-b4e3-6876d04470d2"/>
+    <leadingCalculationTypesType typeId="24f47c40-501a-4405-b3c6-082b7221c6ab" valueTypeId="0d0e10b1-d8d8-4303-bf67-5b7012cfb655"/>
+    <leadingCalculationTypesRowType typeId="ced5a627-6b77-4dd1-abb2-80fbdbf34a6d" valueTypeId="64f6dcae-9f24-4eb1-be8c-560b03315f53"/>
+  </producedTypes>
+  <name>ВКМ_ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
+  <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="fd67021d-18c6-494a-8779-e70df455405d">
+      <name>ОплатаПоОкладу</name>
+      <description>Оплата по окладу</description>
+      <code xsi:type="core:StringValue">
+        <value>2000</value>
+      </code>
+      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</displaced>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ОплатаПоОкладу</base>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ОплатаПоОкладу</leading>
+    </items>
+    <items id="224578a4-eac2-4ad9-b40d-30a01b11b7e2">
+      <name>Отпуск</name>
+      <description>Отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value>2012</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ОплатаПоОкладу</base>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ОплатаПоОкладу</leading>
+    </items>
+    <items id="818b6509-3370-41ba-9412-d35a6eab50c4">
+      <name>ПроцентЗаВыполненныеРаботы</name>
+      <description>Процент за выполненные работы</description>
+      <code xsi:type="core:StringValue">
+        <value>2000</value>
+      </code>
+    </items>
+  </predefined>
+</mdclass:ChartOfCalculationTypes>
