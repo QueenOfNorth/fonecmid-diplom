@@ -1786,6 +1786,13 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.ВКМ_СуммаКОплате</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ДоговорыКонтрагентовПрисоединенныеФайлы.Attribute.Том</name>
 		<right>
 			<name>View</name>
@@ -2594,6 +2601,13 @@
 			<name>View</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.ВКМ_КоличествоЧасов</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -6560,6 +6574,13 @@
 			<name>View</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.ВКМ_Клиент</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -12214,20 +12235,47 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>TotalsControl</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.RecordType</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -12489,6 +12537,13 @@
 			<name>View</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.ВКМ_Договор</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

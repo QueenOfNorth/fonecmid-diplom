@@ -641,6 +641,10 @@
   <roles>Role.ВКМ_ДобавлениеИзменениеДокументаНачислениеЗаработнойПлаты</roles>
   <roles>Role.ВКМ_ДобавлениеИзменениеДокументаНачислениеФиксированныхПремий</roles>
   <roles>Role.ВКМ_ДобавлениеИзменениеДокументаГрафикОтпусков</roles>
+  <roles>Role.ВКМ_ВыработкаСпециалистов</roles>
+  <roles>Role.BKM_АнализВыставленныхАктов</roles>
+  <roles>Role.BKM_РасчётыССотрудниками</roles>
+  <roles>Role.BKM_РасходЗапланированныхОтпусков</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>
