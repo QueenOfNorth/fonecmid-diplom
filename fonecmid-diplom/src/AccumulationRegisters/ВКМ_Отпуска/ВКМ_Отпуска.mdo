@@ -17,7 +17,7 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
   <resources uuid="7ed480e3-06fc-44f5-8823-0ce5e0066940">
-    <name>ВКМ_ДниФакт</name>
+    <name>ДниФакт</name>
     <synonym>
       <key>ru</key>
       <value>Дни факт</value>
@@ -33,7 +33,7 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="df0ea055-bcc7-4ad2-ae0c-6385ae7f0b32">
-    <name>ВКМ_ДниПлан</name>
+    <name>ДниПлан</name>
     <synonym>
       <key>ru</key>
       <value>Дни план</value>
@@ -49,7 +49,7 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="093ba726-fb69-4241-bf9d-c5303f369eba">
-    <name>ВКМ_Сотрудник</name>
+    <name>Сотрудник</name>
     <synonym>
       <key>ru</key>
       <value>Сотрудник</value>

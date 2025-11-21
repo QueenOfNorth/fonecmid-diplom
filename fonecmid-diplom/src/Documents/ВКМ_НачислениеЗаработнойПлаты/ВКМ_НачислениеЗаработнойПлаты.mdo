@@ -31,7 +31,7 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="cd7e23f9-65d0-46b9-be19-4dc50068095a">
-    <name>ВКМ_Ответственный</name>
+    <name>Ответственный</name>
     <synonym>
       <key>ru</key>
       <value>Ответственный</value>
@@ -59,13 +59,13 @@
       <objectType typeId="b71d9647-7da1-45a0-a338-c4aed3c8e45f" valueTypeId="f37f8041-1b78-48df-a14e-5c48c8aa499d"/>
       <rowType typeId="0eab4c87-14d7-4e69-b378-f4a191e41c4d" valueTypeId="ffc4cc0c-abeb-4266-bd05-ce8cc9b482e1"/>
     </producedTypes>
-    <name>ВКМ_СписокСотрудниковОсновное</name>
+    <name>СписокСотрудниковОсновное</name>
     <synonym>
       <key>ru</key>
       <value>Основные начисления</value>
     </synonym>
     <attributes uuid="a8ff8fa1-14f6-4c3b-a9d2-630f6d572a3c">
-      <name>ВКМ_Сотрудник</name>
+      <name>Сотрудник</name>
       <synonym>
         <key>ru</key>
         <value>Сотрудник</value>
@@ -79,7 +79,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="cbce3c77-1b58-4ea5-9341-dd2533a82ba9">
-      <name>ВКМ_ВидРасчета</name>
+      <name>ВидРасчета</name>
       <synonym>
         <key>ru</key>
         <value>Вид расчета</value>
@@ -93,7 +93,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="d3c60f5d-332f-4b50-9876-7ad96e917acc">
-      <name>ВКМ_ДатаНачала</name>
+      <name>ДатаНачала</name>
       <synonym>
         <key>ru</key>
         <value>Дата начала</value>
@@ -110,7 +110,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="6e87fbcc-a00a-4627-ba50-44849793d0ea">
-      <name>ВКМ_ДатаОкончания</name>
+      <name>ДатаОкончания</name>
       <synonym>
         <key>ru</key>
         <value>Дата окончания</value>
@@ -127,7 +127,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="a35ac8c5-8549-4f10-845e-fc20e7ee7011">
-      <name>ВКМ_Начислено</name>
+      <name>Начислено</name>
       <synonym>
         <key>ru</key>
         <value>Начислено</value>
@@ -137,41 +137,6 @@
         <numberQualifiers>
           <precision>15</precision>
           <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="c13f3112-94d6-4693-b681-571d0066e7aa">
-      <name>ВКМ_НДФЛ</name>
-      <synonym>
-        <key>ru</key>
-        <value>НДФЛ</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="dda60d04-6c63-4417-9804-b6263a8476ec">
-      <name>ДниФактСкрытое</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дни факт скрытое</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

@@ -20,7 +20,7 @@
   <mainFilterOnPeriod>true</mainFilterOnPeriod>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="5a6a3678-3aa3-4ebe-982a-8723fa70aece">
-    <name>ВКМ_Оклад</name>
+    <name>Оклад</name>
     <synonym>
       <key>ru</key>
       <value>Оклад</value>
@@ -40,7 +40,7 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="cc8f62dc-3658-4b2b-9c15-9c64195d62e7">
-    <name>ВКМ_ПроцентОтРабот</name>
+    <name>ПроцентОтРабот</name>
     <synonym>
       <key>ru</key>
       <value>Процент от работ</value>
@@ -64,7 +64,7 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="24e20d5d-e4b5-4b12-90ab-4fd844a5ce5e">
-    <name>ВКМ_Сотрудник</name>
+    <name>Сотрудник</name>
     <synonym>
       <key>ru</key>
       <value>Сотрудник</value>

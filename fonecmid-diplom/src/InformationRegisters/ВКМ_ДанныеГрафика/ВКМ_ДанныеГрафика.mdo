@@ -18,7 +18,7 @@
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="394fa70d-4ef8-419e-bfd3-ed9fe40bff62">
-    <name>ВКМ_РабочийДень</name>
+    <name>РабочийДень</name>
     <synonym>
       <key>ru</key>
       <value>Рабочий день</value>
@@ -36,7 +36,7 @@
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="59745611-8d09-43ba-9ac8-2d09f8b542a6">
-    <name>ВКМ_Дата</name>
+    <name>ДатаГрафика</name>
     <synonym>
       <key>ru</key>
       <value>Дата</value>

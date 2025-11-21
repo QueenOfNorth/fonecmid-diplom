@@ -91,7 +91,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Год</segments>
+      <segments>Объект.Год</segments>
     </dataPath>
     <extendedTooltip>
       <name>ВКМ_ГодРасширеннаяПодсказка</name>
@@ -132,7 +132,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_ОтпускаСотрудников</segments>
+      <segments>Объект.ОтпускаСотрудников</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
@@ -144,7 +144,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ОтпускаСотрудников.LineNumber</segments>
+        <segments>Объект.ОтпускаСотрудников.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_ОтпускаСотрудниковНомерСтрокиРасширеннаяПодсказка</name>
@@ -180,7 +180,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ОтпускаСотрудников.ВКМ_Сотрудник</segments>
+        <segments>Объект.ОтпускаСотрудников.Сотрудник</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_ОтпускаСотрудниковВКМ_СотрудникРасширеннаяПодсказка</name>
@@ -221,7 +221,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ОтпускаСотрудников.ВКМ_ДатаНачала</segments>
+        <segments>Объект.ОтпускаСотрудников.ДатаНачала</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -266,7 +266,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ОтпускаСотрудников.ВКМ_ДатаОкончания</segments>
+        <segments>Объект.ОтпускаСотрудников.ДатаОкончания</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -310,7 +310,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ОтпускаСотрудников.РазностьДат</segments>
+        <segments>Объект.ОтпускаСотрудников.РазностьДат</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_ОтпускаСотрудниковРазностьДатРасширеннаяПодсказка</name>
@@ -349,7 +349,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_ОтпускаСотрудников.УчестьБольшойОтпуск</segments>
+        <segments>Объект.ОтпускаСотрудников.УчестьБольшойОтпуск</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_ОтпускаСотрудниковУчестьБольшойОтпускРасширеннаяПодсказка</name>

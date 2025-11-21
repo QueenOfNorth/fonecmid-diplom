@@ -160,7 +160,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_СписокСотрудниковОсновное</segments>
+      <segments>Объект.СписокСотрудниковОсновное</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
@@ -172,7 +172,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.LineNumber</segments>
+        <segments>Объект.СписокСотрудниковОсновное.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеНомерСтрокиРасширеннаяПодсказка</name>
@@ -208,7 +208,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ВКМ_Сотрудник</segments>
+        <segments>Объект.СписокСотрудниковОсновное.Сотрудник</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеВКМ_СотрудникРасширеннаяПодсказка</name>
@@ -249,7 +249,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ВКМ_ВидРасчета</segments>
+        <segments>Объект.СписокСотрудниковОсновное.ВидРасчета</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеВКМ_ВидРасчетаРасширеннаяПодсказка</name>
@@ -290,7 +290,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ВКМ_ДатаНачала</segments>
+        <segments>Объект.СписокСотрудниковОсновное.ДатаНачала</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеВКМ_ДатаНачалаРасширеннаяПодсказка</name>
@@ -330,7 +330,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ВКМ_ДатаОкончания</segments>
+        <segments>Объект.СписокСотрудниковОсновное.ДатаОкончания</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеВКМ_ДатаОкончанияРасширеннаяПодсказка</name>
@@ -370,7 +370,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ВКМ_Начислено</segments>
+        <segments>Объект.СписокСотрудниковОсновное.Начислено</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеВКМ_НачисленоРасширеннаяПодсказка</name>
@@ -410,9 +410,6 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ВКМ_НДФЛ</segments>
-      </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеВКМ_НДФЛРасширеннаяПодсказка</name>
         <id>37</id>
@@ -428,20 +425,10 @@
         <id>36</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>InputField</type>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <extendedEditMultipleValues>true</extendedEditMultipleValues>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>ВКМ_СписокСотрудниковОсновноеДниФактСкрытое</name>
@@ -450,9 +437,6 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудниковОсновное.ДниФактСкрытое</segments>
-      </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковОсновноеДниФактСкрытоеРасширеннаяПодсказка</name>
         <id>64</id>
@@ -468,19 +452,10 @@
         <id>63</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>InputField</type>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
     </items>
     <autoCommandBar>
       <name>ВКМ_СписокСотрудниковОсновноеКоманднаяПанель</name>
@@ -632,7 +607,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Ответственный</segments>
+      <segments>Объект.Ответственный</segments>
     </dataPath>
     <extendedTooltip>
       <name>ВКМ_ОтветственныйРасширеннаяПодсказка</name>

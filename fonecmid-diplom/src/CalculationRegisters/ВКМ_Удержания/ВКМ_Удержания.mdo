@@ -20,7 +20,7 @@
   <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="59d538da-f538-4377-b4bb-7dbc79dd6082">
-    <name>ВКМ_Сумма</name>
+    <name>Сумма</name>
     <synonym>
       <key>ru</key>
       <value>Сумма</value>
@@ -37,7 +37,7 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="a5c7318a-ba09-43b7-9428-08c93ac86711">
-    <name>ВКМ_Сотрудник</name>
+    <name>Сотрудник</name>
     <synonym>
       <key>ru</key>
       <value>Сотрудник</value>

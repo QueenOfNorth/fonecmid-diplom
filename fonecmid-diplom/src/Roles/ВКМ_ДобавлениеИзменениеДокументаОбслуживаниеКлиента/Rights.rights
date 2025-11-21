@@ -356,7 +356,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.СписокДоговоровИРеализаций.Attribute.ВКМ_Реализация</name>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.СписокДоговоровИРеализаций.Attribute.Реализация</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1786,7 +1786,7 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.ВКМ_СуммаКОплате</name>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.СуммаКОплате</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -2607,7 +2607,7 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.ВКМ_КоличествоЧасов</name>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.КоличествоЧасов</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -5007,7 +5007,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.СписокДоговоровИРеализаций.Attribute.ВКМ_Договор</name>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.TabularSection.СписокДоговоровИРеализаций.Attribute.Договор</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -6580,7 +6580,7 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.ВКМ_Клиент</name>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.Клиент</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -12466,7 +12466,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.Attribute.ВКМ_Период</name>
+		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов.Attribute.Период</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -12543,7 +12543,7 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.ВКМ_Договор</name>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.Договор</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

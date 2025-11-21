@@ -19,12 +19,12 @@
   <actionPeriod>true</actionPeriod>
   <basePeriod>true</basePeriod>
   <schedule>InformationRegister.ВКМ_ДанныеГрафика</schedule>
-  <scheduleValue>InformationRegister.ВКМ_ДанныеГрафика.Resource.ВКМ_РабочийДень</scheduleValue>
-  <scheduleDate>InformationRegister.ВКМ_ДанныеГрафика.Dimension.ВКМ_Дата</scheduleDate>
+  <scheduleValue>InformationRegister.ВКМ_ДанныеГрафика.Resource.РабочийДень</scheduleValue>
+  <scheduleDate>InformationRegister.ВКМ_ДанныеГрафика.Dimension.ДатаГрафика</scheduleDate>
   <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartOfCalculationTypes>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="dceb6e18-be4c-41a6-a123-5733d4f99b99">
-    <name>ВКМ_Сумма</name>
+    <name>Сумма</name>
     <synonym>
       <key>ru</key>
       <value>Сумма</value>
@@ -41,7 +41,7 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="f2bf6e1a-9afe-4e23-800c-f2ab3ae4c803">
-    <name>ВКМ_Сотрудник</name>
+    <name>Сотрудник</name>
     <synonym>
       <key>ru</key>
       <value>Сотрудник</value>

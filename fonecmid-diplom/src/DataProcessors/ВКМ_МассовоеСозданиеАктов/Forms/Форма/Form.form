@@ -16,7 +16,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_Период</segments>
+        <segments>Объект.Период</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -169,7 +169,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокДоговоровИРеализаций.ВКМ_Договор</segments>
+        <segments>Объект.СписокДоговоровИРеализаций.Договор</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДоговоровИРеализацийВКМ_ДоговорРасширеннаяПодсказка</name>
@@ -209,7 +209,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокДоговоровИРеализаций.ВКМ_Реализация</segments>
+        <segments>Объект.СписокДоговоровИРеализаций.Реализация</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокДоговоровИРеализацийВКМ_РеализацияРасширеннаяПодсказка</name>

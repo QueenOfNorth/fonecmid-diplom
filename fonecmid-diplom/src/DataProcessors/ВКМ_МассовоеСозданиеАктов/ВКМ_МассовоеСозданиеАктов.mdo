@@ -12,10 +12,10 @@
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.Форма</defaultForm>
   <attributes uuid="98652f40-02b3-47db-b7db-7f521eb42a5d">
-    <name>ВКМ_Период</name>
+    <name>Период</name>
     <synonym>
       <key>ru</key>
-      <value>ВКМ период</value>
+      <value>Период</value>
     </synonym>
     <type>
       <types>StandardPeriod</types>
@@ -34,7 +34,7 @@
       <value>Список договоров и реализаций</value>
     </synonym>
     <attributes uuid="3f14c595-f8e1-47a4-8802-e32bdeb3bbc1">
-      <name>ВКМ_Договор</name>
+      <name>Договор</name>
       <synonym>
         <key>ru</key>
         <value>Договор</value>
@@ -46,7 +46,7 @@
       <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="05bfa123-39d2-40f3-a350-5b14bd34fc58">
-      <name>ВКМ_Реализация</name>
+      <name>Реализация</name>
       <synonym>
         <key>ru</key>
         <value>Реализация</value>

@@ -30,7 +30,7 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="26b94a95-55fd-4ba6-8729-cc9ff033a1c3">
-    <name>ВКМ_Ответственный</name>
+    <name>Ответственный</name>
     <synonym>
       <key>ru</key>
       <value>Ответственный</value>
@@ -58,13 +58,13 @@
       <objectType typeId="7c1a4e13-95a1-4b93-873c-9e7c2881147d" valueTypeId="62b2cfd1-884f-4233-a7d9-0a106c3cb54e"/>
       <rowType typeId="08354816-a0b9-4d2c-984a-6630193a125f" valueTypeId="0ec6579b-54c9-4307-bf21-af5aa072e266"/>
     </producedTypes>
-    <name>ВКМ_СписокСотрудников</name>
+    <name>СписокСотрудников</name>
     <synonym>
       <key>ru</key>
       <value>Список сотрудников</value>
     </synonym>
     <attributes uuid="819b1239-24ec-4818-a3ff-73855d805d82">
-      <name>ВКМ_Сотрудник</name>
+      <name>Сотрудник</name>
       <synonym>
         <key>ru</key>
         <value>Сотрудник</value>
@@ -78,7 +78,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="4fe0817f-893c-4460-9f1e-c46a4be1a637">
-      <name>ВКМ_СуммаПремии</name>
+      <name>СуммаПремии</name>
       <synonym>
         <key>ru</key>
         <value>Сумма премии</value>

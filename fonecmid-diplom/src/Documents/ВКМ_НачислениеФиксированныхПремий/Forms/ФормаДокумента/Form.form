@@ -91,7 +91,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_СписокСотрудников</segments>
+      <segments>Объект.СписокСотрудников</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
@@ -103,7 +103,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудников.LineNumber</segments>
+        <segments>Объект.СписокСотрудников.LineNumber</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковНомерСтрокиРасширеннаяПодсказка</name>
@@ -139,7 +139,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудников.ВКМ_Сотрудник</segments>
+        <segments>Объект.СписокСотрудников.Сотрудник</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковВКМ_СотрудникРасширеннаяПодсказка</name>
@@ -180,7 +180,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ВКМ_СписокСотрудников.ВКМ_СуммаПремии</segments>
+        <segments>Объект.СписокСотрудников.СуммаПремии</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВКМ_СписокСотрудниковВКМ_СуммаПремииРасширеннаяПодсказка</name>
@@ -336,7 +336,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.ВКМ_Ответственный</segments>
+      <segments>Объект.Ответственный</segments>
     </dataPath>
     <extendedTooltip>
       <name>ВКМ_ОтветственныйРасширеннаяПодсказка</name>

@@ -9,12 +9,6 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Клиент</dataPath>
 			<field>Клиент</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Клиент</v8:content>
-				</v8:item>
-			</title>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -22,33 +16,33 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Договор</dataPath>
 			<field>Договор</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Договор</v8:content>
-				</v8:item>
-			</title>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКОплатеПериод</dataPath>
-			<field>СуммаКОплатеПериод</field>
+			<dataPath>СуммаРабот</dataPath>
+			<field>СуммаРабот</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКОплатеТекущийМесяц</dataPath>
-			<field>СуммаКОплатеТекущийМесяц</field>
+			<dataPath>СуммаАктов</dataPath>
+			<field>СуммаАктов</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма к оплате текущий месяц</v8:content>
+					<v8:content>Сумма актов</v8:content>
 				</v8:item>
 			</title>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разница</dataPath>
+			<field>Разница</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разница</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаАбонентскойПлаты</dataPath>
@@ -61,39 +55,58 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВКМ_Клиент</dataPath>
-			<field>ВКМ_Клиент</field>
+			<dataPath>СуммаОтгрузки</dataPath>
+			<field>СуммаОтгрузки</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВКМ_Договор</dataPath>
-			<field>ВКМ_Договор</field>
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	Работы.ВКМ_Клиент КАК Клиент,
-	Работы.ВКМ_Договор КАК Договор,
-	СУММА(Работы.ВКМ_СуммаКОплатеОборот) КАК СуммаКОплатеПериод,
-	СУММА(ВЫБОР
-			КОГДА Работы.Период &gt;= &amp;НачалоТекущегоМесяца
-					И Работы.Период &lt;= &amp;КонецТекущегоМесяца
-				ТОГДА Работы.ВКМ_СуммаКОплатеОборот
-			ИНАЧЕ 0
-		КОНЕЦ) КАК СуммаКОплатеТекущийМесяц,
-	ВЫБОР
-		КОГДА Договор.ВКМ_ДатаОкончанияДоговора &gt;= &amp;КонецТекущегоМесяца
-			ТОГДА Договор.ВКМ_СуммаАбонентскойПлаты
-		ИНАЧЕ 0
-	КОНЕЦ КАК СуммаАбонентскойПлаты
-ИЗ
-	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Месяц, ) КАК Работы
-		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ДоговорыКонтрагентов КАК Договор
-		ПО (Работы.ВКМ_Договор = Договор.Ссылка)
+    Работы.Клиент КАК Клиент,
+    Работы.Договор КАК Договор,
+    СУММА(Работы.СуммаКОплатеОборот) КАК СуммаРабот,
+    СУММА(Акты.СуммаОтгрузки) КАК СуммаАктов,
+    СУММА(Работы.СуммаКОплатеОборот) - СУММА(Акты.СуммаОтгрузки) КАК Разница,
+    ВЫБОР
+        КОГДА Договоры.ВКМ_ДатаОкончанияДоговора &gt;= &amp;КонецТекущегоМесяца
+            ТОГДА Договоры.ВКМ_СуммаАбонентскойПлаты
+        ИНАЧЕ 0
+    КОНЕЦ КАК СуммаАбонентскойПлаты
 
-СГРУППИРОВАТЬ ПО
-	Работы.ВКМ_Клиент,
-	Работы.ВКМ_Договор,
-	Договор.ВКМ_ДатаОкончанияДоговора,
-	Договор.ВКМ_СуммаАбонентскойПлаты</query>
+ИЗ
+    РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(
+        &amp;НачалоПериода, &amp;КонецПериода, Месяц
+    ) КАК Работы
+
+    ЛЕВОЕ СОЕДИНЕНИЕ (
+        ВЫБРАТЬ
+            Обработка.Контрагент КАК Клиент,
+            Обработка.Договор КАК Договор,
+            СУММА(Обработка.СуммаОтгрузкиОборот) КАК СуммаОтгрузки
+        ИЗ
+            РегистрНакопления.ОбработкаЗаказов.Обороты(
+                &amp;НачалоПериода, &amp;КонецПериода, Месяц
+            ) КАК Обработка
+        СГРУППИРОВАТЬ ПО
+            Обработка.Контрагент,
+            Обработка.Договор    ) КАК Акты
+    ПО Работы.Клиент = Акты.Клиент
+        И Работы.Договор = Акты.Договор
+
+    ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ДоговорыКонтрагентов КАК Договоры
+    ПО Работы.Договор = Договоры.Ссылка
+ СГРУППИРОВАТЬ ПО
+    Работы.Клиент,
+    Работы.Договор,
+    Договоры.ВКМ_ДатаОкончанияДоговора,
+    Договоры.ВКМ_СуммаАбонентскойПлаты
+</query>
 	</dataSet>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -129,24 +142,6 @@
 		</valueType>
 		<useRestriction>true</useRestriction>
 		<expression>КОНЕЦПЕРИОДА(&amp;Период.ДатаОкончания,"ДЕНЬ")</expression>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>НачалоТекущегоМесяца</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Начало текущего месяца</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<useRestriction>true</useRestriction>
-		<expression>НАЧАЛОПЕРИОДА(ТекущаяДата(),"МЕСЯЦ")</expression>
 		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
@@ -198,10 +193,13 @@
 					<dcsset:field>Договор</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКОплатеПериод</dcsset:field>
+					<dcsset:field>СуммаРабот</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКОплатеТекущийМесяц</dcsset:field>
+					<dcsset:field>СуммаАктов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Разница</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаАбонентскойПлаты</dcsset:field>

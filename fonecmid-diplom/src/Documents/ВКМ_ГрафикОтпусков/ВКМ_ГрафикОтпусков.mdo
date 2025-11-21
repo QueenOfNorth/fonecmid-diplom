@@ -28,7 +28,7 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="ebdfe54d-c319-4074-b590-5a740c06ad04">
-    <name>ВКМ_Год</name>
+    <name>Год</name>
     <synonym>
       <key>ru</key>
       <value>Год</value>
@@ -77,13 +77,13 @@
       <objectType typeId="e9620e4e-ed54-419f-b4ca-8a2ae5baac66" valueTypeId="dc04a1ad-569e-4549-a3fe-59ce7debe8e3"/>
       <rowType typeId="dd1cba71-b0b0-4e43-a551-1507c003c26e" valueTypeId="4a17ebf2-1ad7-4313-ac20-a83a9a195bd7"/>
     </producedTypes>
-    <name>ВКМ_ОтпускаСотрудников</name>
+    <name>ОтпускаСотрудников</name>
     <synonym>
       <key>ru</key>
       <value>Отпуска сотрудников</value>
     </synonym>
     <attributes uuid="4f5f0ec6-07e4-48dc-b255-fe6e21ff0829">
-      <name>ВКМ_Сотрудник</name>
+      <name>Сотрудник</name>
       <synonym>
         <key>ru</key>
         <value>Сотрудник</value>
@@ -97,7 +97,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="e7676282-0fb9-41d9-b9d8-81891f699b22">
-      <name>ВКМ_ДатаНачала</name>
+      <name>ДатаНачала</name>
       <synonym>
         <key>ru</key>
         <value>Дата начала</value>
@@ -114,7 +114,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="c41f9921-fe0c-4fc9-83da-1b98e7608bfe">
-      <name>ВКМ_ДатаОкончания</name>
+      <name>ДатаОкончания</name>
       <synonym>
         <key>ru</key>
         <value>Дата окончания</value>
